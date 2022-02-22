@@ -1,0 +1,34 @@
+enableVersioning: true
+handle: blog
+name: Blog
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+  -
+    __assoc__:
+      -
+        - label
+        - 'Gatsby entry page'
+      -
+        - urlFormat
+        - 'http://localhost:8000/blog/{slug}'
+      -
+        - refresh
+        - ''
+propagationMethod: all
+siteSettings:
+  f3400d6f-0f33-4cef-9521-f8f6620399ec: # Craft Nuxt 3 Starter Blog
+    enabledByDefault: true
+    hasUrls: true
+    template: _private/blog-entry
+    uriFormat: 'blog/{slug}'
+type: channel
